@@ -1,0 +1,351 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header {
+    text-align:center;
+    background-color: aquamarine;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    padding-top: 2%;
+}
+
+
+header > * {
+    margin: 0;
+}
+
+header a {
+    color: black;
+    text-shadow: 1px 2px 10px white;
+}
+
+header a:hover {
+    color : white;
+    text-shadow: 1px 2px 10px black;
+    font-weight: bold;
+}
+
+nav {
+    background-color: rgba(127,255,212, 0.7);
+    padding: 1%;
+    margin-top: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+body {
+    background-color: #E0FFFF;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    padding: 2%; 
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 5%;
+}
+
+fieldset textarea {
+    height: 100px;
+}
+
+fieldset > * {
+    width: 100%;
+}
+
+fieldset button {
+    width: 15%;
+    margin : 2% auto 0 auto;
+}
+
+/*.articles {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 4%;
+    grid-column: 5 / 1;
+}*/
+
+.articles {
+    display: grid;
+    margin: 4%;
+    grid-column: 5 / 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+}
+
+.articles a {
+    color: navy;
+    font-weight: bold;
+}
+
+.articles article {
+    width: auto;
+    border: 1px solid aquamarine;
+    padding: 4%;
+    margin: 2%;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 1.4rem;
+    height: max-content;
+}
+
+.isekai {
+    background-color: orange;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.shoujo {
+    background-color: pink;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.seinen {
+    background-color: dodgerblue;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.authors {
+    color: white;
+    text-shadow: 1px 2px 10px black;
+    border-left : 2px solid aquamarine;
+    grid-column: 5;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: navy;
+    
+}
+
+.author_article a {
+    color: white;
+}
+
+.author_article a:hover {
+    text-shadow: 1px 1px 10px yellow, 0 0 10px navy;
+}
+
+.authors .author_article {
+   background-color: rgba(0,0,0, 0.6);
+   padding: 5%;
+}
+
+.authors p {
+    font-size: 1.3rem;
+}
+
+.this_article article {
+    width: 70%;
+    background-color: white;
+    margin: 2% auto;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.this_article {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    margin: 4%;
+    grid-column: 5 / 1;
+}
+
+.this_article h3 {
+    text-align: center;
+}
+
+.comment_section {
+    border-top: thick double black;
+    margin-top: 10%;
+}
+
+.comment_section h4 {
+    font-size: 1.8rem;
+}
+
+.nocommenthere {
+    text-align: center;
+}
+
+.comment {
+    border-top: 1px dashed navy;
+}
+
+.comment:first-of-type {
+    border-top: none;
+}
+
+.comment .nickname {
+    font-weight: bold;
+    color: orangered;
+}
+    /* ADMIN INTERFACE*/
+    
+.admin {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.parameter_menu {
+    grid-column: 1;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url('../images/bg.png');
+    background-size: 500%;
+    color: white;
+    text-shadow: 1px 2px 10px black;
+    border-right : 2px solid aquamarine;
+    padding : 5%;
+    font-size: 2.5rem;
+}
+
+.parameter_menu a {
+    color: white;
+    padding: 5% 15%;
+}
+
+.parameter_menu li {
+    list-style : none;
+    padding: 10% 15%;
+}
+
+.parameter_menu ul {
+    padding : 0 0 80% 0;
+}
+
+.parameter_menu a:hover {
+    text-shadow: 2px 2px 20px yellow;
+    font-weight: bold;
+}
+
+.admin_main {
+    grid-column: 6 / 2;
+    text-align: center;
+}
+
+.admin_main table {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.admin_main tbody tr > * {
+    padding: 1%;
+}
+
+.admin_main th:nth-of-type(2) {
+    width: 40%;
+}
+
+.admin_main a {
+    color: rgb(0, 0, 238);
+}
+
+.admin_main a:hover {
+    text-decoration: underline;
+}
+
+.new_article {
+    margin-bottom : 7%;
+}
+
+.new_article input, .new_article textarea, .new_article select {
+    margin-bottom: 5%;
+}
+
+.article_img {
+    width: 100%;
+}
+.form_parameters {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.form_parameters > * {
+    width: 50%;
+}
+
+.inscription form {
+    margin-bottom : 5%;
+}
+
+.inscription h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.inscription fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.inscription fieldset > * {
+    width: 50%;
+    margin: 2% 0;
+}
+
+.inscription button {
+    width: 25%;
+}
+
+.connexion fieldset  {
+    margin-bottom: 4%;
+}
+
+.connexion fieldset a  {
+    color: red;
+    text-decoration: underline;
+}
+
+.connexion fieldset p {
+    color: red;
+}
+
+.connexion fieldset a:hover {
+    color: navy;
+}
+
+.notconnected {
+    display:none;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+footer {
+    background-image: linear-gradient(to right, navy, #2e167c);
+    margin: 0;
+    padding: 2%;
+    color: lightgrey;
+    font-size: 1rem;
+    text-align: center;
+}
